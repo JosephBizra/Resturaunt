@@ -45,6 +45,7 @@ app.get("/api/reservations", function (req, res) {
     return res.json(reservations)
 })
 
+//listen on the port difference
 app.listen(PORT, function () {
     console.log("App is listening on PORT: " + PORT);
 })
