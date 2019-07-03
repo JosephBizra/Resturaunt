@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Star Wars - Express</title>
+  <title>Pho Great King</title>
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +81,8 @@
         uniqueId: $("#unique-id").val().trim()
       };
 
-      $.post("/api/tables", newReseveration, function(data){
+      $.post("/api/tables", newReservation)
+      .then(function(data){
           if(data){
           alert("Adding reservation...");
           } else{
