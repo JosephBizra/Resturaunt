@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1>Fu King Great</h1>
+            <h3>Reservations: <h3 id="reservations"><h3>/5</h3>
+            <hr>
+            <a href="/add"><button id="btn" class="btn btn-danger btn-lg"><span class="fa fa-plus"></span>Make a reservation</button></a>
+            <h3>Waitlist: <h3 id="waitlist"></h3></h3>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <script>
+            $("#btn").on("click", function(params){
+                params.preventDefault()
+                // 
+      $.get("/api/tables/" , function(data) {
+                    
+                //     if(data){
+                //         console.log(data);
+                //     }
+                })
+            });
+            
+        </script>
+    </body>
+</html>
