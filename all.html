@@ -25,12 +25,15 @@
             $("#btn").on("click", function(params){
                 params.preventDefault()
                 // 
-      $.get("/api/tables/" , function(data) {
+            $.get("/api/tables/", function(data) {
                     
-                //     if(data){
-                //         console.log(data);
-                //     }
-                })
+                    if(data){
+                        console.log(data);
+                        for(var i = 0; i < data.length; i++);
+                        $("#reservations").text(data[i]);
+                        $("#waitlist").text(data[i]);
+                    }
+                });
             });
             
         </script>
