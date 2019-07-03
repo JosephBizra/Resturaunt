@@ -52,7 +52,7 @@ app.get("/all", function (req, res) {
 })
 
 app.get("/api/tables", function (req, res) {
-    return res.json(reservations)
+    return res.json(tables)
 })
 
 //listen on the port difference
