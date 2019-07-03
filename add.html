@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Pho Great King</title>
@@ -10,6 +11,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </head>
+
 <body>
 
   <div class="container">
@@ -18,10 +20,10 @@
       <h3>The Greatest Pho in Austin, TX</h3>
       <hr>
       <a href="/"><button class="btn btn-danger btn-lg"><span class="fa fa-eye"></span> View Tables</button></a>
-      
+
 
     </div>
-    
+
     <div class="row">
 
       <div class="col-12">
@@ -56,15 +58,16 @@
             </form>
             <br>
             <div class="text-left">
-              <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="fa fa-fire"></span> Submit</button>
+              <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="fa fa-fire"></span>
+                Submit</button>
             </div>
           </div>
         </div>
         <footer class="footer">
-            <div class="container">
-              <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
-            </div>
-          </footer>
+          <div class="container">
+            <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
+          </div>
+        </footer>
 
       </div>
     </div>
@@ -72,7 +75,7 @@
 
 
   <script type="text/javascript">
-    $("#add-btn").on("click", function(event) {
+    $("#add-btn").on("click", function (event) {
       event.preventDefault();
       var newReservation = {
         name: $("#name").val().trim(),
@@ -93,4 +96,5 @@
   </script>
 
 </body>
+
 </html>
