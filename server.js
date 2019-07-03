@@ -7,7 +7,7 @@ var app = express();
 var PORT = 3000;
 
 
-// variables
+// variables server
 var reservations = [
     {
         ID: "afhaque89",
